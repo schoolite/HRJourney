@@ -1,0 +1,25 @@
+{
+  "name": "hrjourney",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "watch": "node-sass scss/main.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/schoolite/HRJourney.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/schoolite/HRJourney/issues"
+  },
+  "homepage": "https://github.com/schoolite/HRJourney#readme",
+  "dependencies": {
+    "bootstrap": "^5.1.1"
+  },
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
