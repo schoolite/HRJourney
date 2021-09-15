@@ -1,0 +1,64 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+  
+body {
+    min-height: 100vh;
+    background-color: #fff;
+}
+  
+.side-navbar {
+    width: 250px;
+    height: 100%;
+    position: fixed;
+}
+  
+.nav-link:focus,
+.nav-link:hover {
+    background-color: #0DCAF0;
+    width: 19em;
+}
+
+.nav-link:active {
+    background-color: #000;
+}
+   
+.mx-2 {
+    color: #fff;
+}
+
+.nav {
+    margin-top: 25px;
+
+}
+
+.sideMenu {
+    height: 91.2vh;
+}
+
+.navbar-brand {
+    display: flex;
+    flex: 10;
+}
+
+.dot {
+    margin-left: -17px;
+}
+
+.dashboard h1 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+.form-select {
+    width: 100px;
+    box-shadow: 0px 2px 1px 0px;
+}
+
+.dashboard-select {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
