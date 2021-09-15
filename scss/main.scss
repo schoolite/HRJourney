@@ -1,9 +1,11 @@
-@import 'abstract/variables';
 @import 'bootstrap/bootstrap.scss';
 
 @import 'abstract/mixins';
 
 @import 'base/base';
 @import 'base/typography';
+
+@import 'component/card';
+
 
 
