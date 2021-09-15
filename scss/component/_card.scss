@@ -1,5 +1,5 @@
 .card {
-  padding-top: 2.5rem;
+  padding-top: 1.5rem;
   cursor: pointer;
   @include border-radius($border-radius-lg * 2);
   box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
@@ -8,6 +8,10 @@
   &:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+  }
+
+  &-body{
+    padding: 0;
   }
 
   &-img-top{
@@ -20,12 +24,13 @@
   }
 
   &-title{
-    font-size: $h3-font-size;
+    font-size: $h5-font-size;
     font-weight: $font-weight-bolder;
+    border: none;
   }
 
   &-text{
-    font-size: $font-size-lg;
+    font-size: $font-size-sm * 1.1;
   }
 
   &-footer{
@@ -33,8 +38,7 @@
       @include border-radius(0 0 $border-radius-lg * 2 $border-radius-lg * 2);
     }
     small{
-      font-weight: $font-weight-bold;
-      font-size: $font-size-base * 1.15;
+      font-weight: $font-weight-bold - 200;
     }
   }
 

@@ -1,0 +1,17 @@
+.form-control{
+    border-radius: 3rem;
+}
+
+.input-icon{
+    position: relative;
+
+    & .icon {
+        position: absolute;
+        padding: 8px;
+        pointer-events: none;
+    };
+
+    & .form-control{
+        padding-left: 2rem;
+    }
+}
