@@ -7851,6 +7851,11 @@ textarea.form-control-lg {
   .input-icon .form-control {
     padding-left: 2rem; }
 
+.btn-icon .btn {
+  gap: 20px;
+  font-weight: 600;
+  font-size: 16px; }
+
 .notification {
   position: relative; }
   .notification span:after {
