@@ -1,14 +1,7 @@
-
-.input-icon{
-    position: relative;
-
-    & .icon {
-        position: absolute;
-        padding: 8px;
-        pointer-events: none;
-    };
-
-    & .form-control{
-        padding-left: 2rem;
-    }
+.img {
+    height: 80%; 
+    background-image: url('../images/Group 8.svg'); 
+    background-repeat: no-repeat; 
+    background-position: center; 
+    background-size: contain;
 }
