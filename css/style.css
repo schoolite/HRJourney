@@ -7839,9 +7839,6 @@ textarea.form-control-lg {
   .card-footer small, .card-footer .small {
     font-weight: 500; }
 
-.form-control {
-  border-radius: 3rem; }
-
 .input-icon {
   position: relative; }
   .input-icon .icon {
@@ -7850,6 +7847,11 @@ textarea.form-control-lg {
     pointer-events: none; }
   .input-icon .form-control {
     padding-left: 2rem; }
+
+.btn-icon .btn {
+  gap: 20px;
+  font-weight: 600;
+  font-size: 16px; }
 
 header {
   position: fixed;
