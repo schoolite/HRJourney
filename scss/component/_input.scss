@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .input-icon{
     position: relative;
 
@@ -11,3 +12,19 @@
         padding-left: 2rem;
     }
 }
+=======
+
+.input-icon{
+    position: relative;
+
+    & .icon {
+        position: absolute;
+        padding: 8px;
+        pointer-events: none;
+    };
+
+    & .form-control{
+        padding-left: 2rem;
+    }
+}
+>>>>>>> 4bf150a9360a93a35ac0c76ad9c9682409960e01
