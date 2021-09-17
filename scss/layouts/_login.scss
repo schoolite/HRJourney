@@ -1,7 +1,12 @@
 .img {
-    height: 90%; 
-    background-image: url('../images/Group 8.svg'); 
+    height: 88%; 
+    background-image: url('../images/login.svg'); 
     background-repeat: no-repeat; 
     background-position: center; 
     background-size: contain;
+}
+
+.main {
+    position: relative;
+    left: 70px;
 }

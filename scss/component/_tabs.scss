@@ -1,0 +1,26 @@
+.nav-tabs {
+
+    .nav-link {
+        color: $gray-500;
+        border: 0;
+        border-radius: 0;
+        margin-bottom: 0;
+    
+        &:hover,
+        &:focus {
+            color: $primary;
+            border-color: none;
+        }
+    
+        &.disabled {
+          color: $nav-link-disabled-color;
+          background-color: transparent;
+          border-color: transparent;
+        }
+    }
+
+    .nav-link.active,
+    .nav-item.show .nav-link {
+        color: $primary; 
+    }
+}
