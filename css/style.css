@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -7811,6 +7812,37 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
+body {
+  font-family: 'Lato', sans-serif; }
+
+.card {
+  padding-top: 1.5rem;
+  cursor: pointer;
+  border-radius: 0.6rem;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
+  .card-body {
+    padding: 0; }
+  .card-img-top {
+    position: relative;
+    width: 45%;
+    display: inline-block;
+    margin: 0 auto;
+    border-radius: 100%; }
+  .card-title {
+    font-size: 1.25rem;
+    font-weight: bolder;
+    border: none; }
+  .card-text {
+    font-size: 0.9625rem; }
+  .card-footer:last-child {
+    border-radius: 0 0 0.6rem 0.6rem; }
+  .card-footer small, .card-footer .small {
+    font-weight: 500; }
+
 .input-icon {
   position: relative; }
   .input-icon i {
@@ -7874,3 +7906,10 @@ header {
   @media (max-width: 767.98px) {
     .dashboard {
       margin-left: 4rem; } }
+
+.img {
+  height: 90%;
+  background-image: url("../images/Group 8.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain; }
