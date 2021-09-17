@@ -7862,6 +7862,9 @@ body {
   width: .8rem !important;
   background-size: .8rem !important; }
 
+.profile-text {
+  font-size: 16px; }
+
 .nav-tabs .nav-link {
   color: #adb5bd;
   border: 0;
