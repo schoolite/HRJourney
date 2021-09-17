@@ -12533,22 +12533,12 @@ body {
 .input-icon {
   position: relative;
 }
-<<<<<<< HEAD
-.input-icon .icon {
-  position: absolute;
-  padding: 8px;
-  pointer-events: none;
-}
-.input-icon .form-control {
-  padding-left: 2rem;
-=======
 .input-icon i {
   position: absolute;
   padding: 0.5rem;
 }
 .input-icon .form-control {
   padding-left: 1.8rem;
->>>>>>> 3582ade815f0db8e5f513b8a678601b66cea721e
 }
 
 .btn-icon .btn {
@@ -12645,12 +12635,8 @@ header {
 }
 
 .img {
-<<<<<<< HEAD
   height: 88%;
-=======
-  height: 90%;
->>>>>>> 3582ade815f0db8e5f513b8a678601b66cea721e
-  background-image: url("../images/Group 8.svg");
+  background-image: url("../images/login.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
