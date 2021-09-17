@@ -32,11 +32,11 @@ header{
         }
 
         &:hover{
-            background-color: $blue;
+            background-color: #FBFCFE;
             
             i,
             .nav-link{
-                color: $white;
+                color: $primary;
             }
         }
     }
@@ -61,6 +61,7 @@ header{
     width: 100%;
     min-height: 84vh;
     margin-top: 4.75rem;
+    background-color: #FBFCFE;
 
     @include media-breakpoint-down(md) { 
         margin-left: 4rem;

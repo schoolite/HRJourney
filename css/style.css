@@ -7811,40 +7811,13 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important; } }
 
-.card {
-  padding-top: 1.5rem;
-  cursor: pointer;
-  border-radius: 0.6rem;
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
-  .card-body {
-    padding: 0; }
-  .card-img-top {
-    position: relative;
-    width: 45%;
-    display: inline-block;
-    margin: 0 auto;
-    border-radius: 100%; }
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bolder;
-    border: none; }
-  .card-text {
-    font-size: 0.9625rem; }
-  .card-footer:last-child {
-    border-radius: 0 0 0.6rem 0.6rem; }
-  .card-footer small, .card-footer .small {
-    font-weight: 500; }
-
-.img {
-  height: 80%;
-  background-image: url("../images/Group 8.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain; }
+.input-icon {
+  position: relative; }
+  .input-icon i {
+    position: absolute;
+    padding: .5rem; }
+  .input-icon .form-control {
+    padding-left: 1.8rem; }
 
 .btn-icon .btn {
   gap: 20px;
@@ -7879,10 +7852,10 @@ header {
         padding-left: 0;
         margin: 0 auto; } }
     .sidebar .nav-item:hover {
-      background-color: #649AE9; }
+      background-color: #FBFCFE; }
       .sidebar .nav-item:hover i,
       .sidebar .nav-item:hover .nav-link {
-        color: #fff; }
+        color: #649AE9; }
   .sidebar i,
   .sidebar .nav-link {
     color: #adb5bd;
@@ -7896,7 +7869,8 @@ header {
   margin-left: 12rem;
   width: 100%;
   min-height: 84vh;
-  margin-top: 4.75rem; }
+  margin-top: 4.75rem;
+  background-color: #FBFCFE; }
   @media (max-width: 767.98px) {
     .dashboard {
       margin-left: 4rem; } }

@@ -1,7 +1,12 @@
-.img {
-    height: 80%; 
-    background-image: url('../images/Group 8.svg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: contain;
+.input-icon{
+    position: relative;
+
+    & i{
+        position: absolute;
+        padding: .5rem;
+    }
+
+    & .form-control{
+        padding-left: 1.8rem;
+    }
 }
