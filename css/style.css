@@ -7942,30 +7942,20 @@ header {
 
 .main {
   position: relative;
-<<<<<<< HEAD
-  left: 70px;
-}
+  left: 70px; }
 
 .hero-main {
   padding: 80px 35px;
-  border: 2px dashed #649AE9;
-}
+  border: 2px dashed #649AE9; }
 
 .hero-cover {
-  padding: 20px;
-}
+  padding: 20px; }
 
 .hr-request-title {
-  font-size: 18px;
-}
+  font-size: 18px; }
 
 .hr-request-title-decription {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 .hr-request-title-link {
-  font-size: 14px;
-}
-=======
-  left: 70px; }
->>>>>>> 65518052a52106e1ae003498c5ef560ccdf42d8f
+  font-size: 14px; }
