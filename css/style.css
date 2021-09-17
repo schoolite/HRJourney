@@ -12495,31 +12495,6 @@ body {
   padding-top: 1.5rem;
   cursor: pointer;
   border-radius: 0.6rem;
-<<<<<<< HEAD
-  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
-  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12); }
-  .card:hover {
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); }
-  .card-body {
-    padding: 0; }
-  .card-img-top {
-    position: relative;
-    width: 45%;
-    display: inline-block;
-    margin: 0 auto;
-    border-radius: 100%; }
-  .card-title {
-    font-size: 1.25rem;
-    font-weight: bolder;
-    border: none; }
-  .card-text {
-    font-size: 0.9625rem; }
-  .card-footer:last-child {
-    border-radius: 0 0 0.6rem 0.6rem; }
-  .card-footer small, .card-footer .small {
-    font-weight: 500; }
-=======
   -webkit-box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
           box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.05);
   transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
@@ -12554,7 +12529,18 @@ body {
 .card-footer small, .card-footer .small {
   font-weight: 500;
 }
->>>>>>> 4bf150a9360a93a35ac0c76ad9c9682409960e01
+
+.input-icon {
+  position: relative;
+}
+.input-icon .icon {
+  position: absolute;
+  padding: 8px;
+  pointer-events: none;
+}
+.input-icon .form-control {
+  padding-left: 2rem;
+}
 
 .btn-icon .btn {
   gap: 20px;
@@ -12614,9 +12600,14 @@ body {
 }
 
 .img {
-  height: 80%;
+  height: 88%;
   background-image: url("../images/Group 8.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain;
+}
+
+.main {
+  position: relative;
+  left: 70px;
 }
