@@ -5,22 +5,19 @@
         border: 0;
         border-radius: 0;
         margin-bottom: 0;
+        padding-left: 3rem;
+        padding-right: 3rem;
     
         &:hover,
         &:focus {
             color: $primary;
-            border-color: none;
-        }
-    
-        &.disabled {
-          color: $nav-link-disabled-color;
-          background-color: transparent;
-          border-color: transparent;
         }
     }
 
     .nav-link.active,
     .nav-item.show .nav-link {
-        color: $primary; 
+        color: $primary;
+        border-bottom: 2px solid $primary;
+        margin-bottom: -$nav-tabs-border-width
     }
 }
