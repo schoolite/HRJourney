@@ -1,11 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
 @import 'bootstrap/bootstrap.scss';
 
-@import 'abstract/mixins';
+@import "base/typography";
 
 @import "component/card";
 @import "component/input";
 @import "component/button";
 @import 'layouts/sidebar';
+@import "layouts/login";
 
 
 

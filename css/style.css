@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
 /*!
  * Bootstrap v5.1.1 (https://getbootstrap.com/)
  * Copyright 2011-2021 The Bootstrap Authors
@@ -12486,6 +12487,10 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
+body {
+  font-family: "Lato", sans-serif;
+}
+
 .card {
   padding-top: 1.5rem;
   cursor: pointer;
@@ -12523,14 +12528,6 @@ textarea.form-control-lg {
 }
 .card-footer small, .card-footer .small {
   font-weight: 500;
-}
-
-.img {
-  height: 80%;
-  background-image: url("../images/Group 8.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
 }
 
 .btn-icon .btn {
@@ -12588,4 +12585,12 @@ textarea.form-control-lg {
 
 .dashboard {
   background-color: #649AE929;
+}
+
+.img {
+  height: 80%;
+  background-image: url("../images/Group 8.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
 }
