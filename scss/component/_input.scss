@@ -1,20 +1,15 @@
+
 .input-icon{
     position: relative;
 
-    & .icon {
+    & i{
         position: absolute;
-        padding: 8px;
-        pointer-events: none;
-    };
+        padding: .5rem;
+    }
 
     & .form-control{
-        padding-left: 2rem;
+        padding-left: 1.8rem;
     }
 }
-.img {
-    height: 80%; 
-    background-image: url('../images/Group 8.svg'); 
-    background-repeat: no-repeat; 
-    background-position: center; 
-    background-size: contain;
-}
+
+
