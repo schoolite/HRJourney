@@ -1,45 +1,6 @@
 .card {
-  padding-top: 1.5rem;
-  cursor: pointer;
-  @include border-radius($border-radius-lg * 2);
-  box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
-  transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
-
-  &:hover{
-    transform: scale(1.05);
-    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
-  }
-
-  &-body{
-    padding: 0;
-  }
-
-  &-img-top{
-    position: relative;
-    width: 45%;
-    display: inline-block;
-    margin: 0 auto;
-    border-radius: 100%;
-    
-  }
-
-  &-title{
-    font-size: $h5-font-size;
-    font-weight: $font-weight-bolder;
-    border: none;
-  }
-
-  &-text{
-    font-size: $font-size-sm * 1.1;
-  }
-
-  &-footer{
-    &:last-child {
-      @include border-radius(0 0 $border-radius-lg * 2 $border-radius-lg * 2);
-    }
-    small{
-      font-weight: $font-weight-bold - 200;
-    }
-  }
-
+    background-color: $white;
+    border-radius: 8px;
+    border: 0;
+    @include box-shadow($card-box-shadow);
 }
