@@ -7848,6 +7848,15 @@ body {
   font-weight: 600;
   font-size: 16px; }
 
+.accordion-button::after {
+  margin-left: 0 !important;
+  height: .8rem !important;
+  width: .8rem !important;
+  background-size: .8rem !important; }
+
+.profile-text {
+  font-size: 16px; }
+
 .nav-tabs .nav-link {
   color: #adb5bd;
   border: 0;
@@ -7916,7 +7925,7 @@ header {
 
 .img {
   height: 88%;
-  background-image: url("../images/Group 8.svg");
+  background-image: url("../images/login.svg");
   background-repeat: no-repeat;
   background-position: center;
   background-size: contain; }
