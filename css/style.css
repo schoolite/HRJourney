@@ -7818,7 +7818,22 @@ body {
 .card {
   background-color: #fff;
   border-radius: 8px;
-  border: 0; }
+  border: 0;
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08), 0 0 6px rgba(0, 0, 0, 0.08);
+  transition: 0.3s transform cubic-bezier(0.155, 1.105, 0.295, 1.12), 0.3s box-shadow, 0.3s -webkit-transform cubic-bezier(0.155, 1.105, 0.295, 1.12);
+  cursor: pointer; }
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgaba(0, 0, 0, 0.08); }
+  .card-img-top {
+    width: 50%; }
+  .card-title {
+    color: #081D3A; }
+  .card-text, .card-footer {
+    font-size: 0.875rem;
+    color: #707070; }
+  .card-footer {
+    background: none; }
 
 .input-icon {
   position: relative; }
@@ -7883,8 +7898,7 @@ header {
         color: #649AE9; }
   .sidebar i,
   .sidebar .nav-link {
-    color: #adb5bd;
-    font-weight: 600; }
+    color: #adb5bd; }
   @media (max-width: 767.98px) {
     .sidebar i {
       margin: 0 auto;
@@ -7910,3 +7924,6 @@ header {
 .heroImg {
   position: relative;
   left: 70px; }
+
+.staffs .row:not(:last-child) {
+  margin-bottom: 3rem; }
