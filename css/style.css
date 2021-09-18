@@ -12665,7 +12665,7 @@ header {
 .dashboard {
   margin-left: 12rem;
   width: 100%;
-  min-height: 84vh;
+  min-height: 89vh;
   margin-top: 4.625rem;
   background-color: #FBFCFE;
 }
@@ -12686,18 +12686,6 @@ header {
 .heroImg {
   position: relative;
   left: 70px;
-}
-
-.hr-edit-title {
-  font-size: 20px;
-}
-
-.hr-edit-label {
-  font-size: 16px;
-}
-
-.hr-edit-field {
-  font-size: 14px;
 }
 
 .hr-request-title {
@@ -12743,5 +12731,5 @@ header {
 }
 
 .hero-covr {
-  padding: 20px;
+  padding: 30px;
 }
