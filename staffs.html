@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>Document</title>
+    <title>Staffs</title>
 </head>
 <body>
   <header class="header">
@@ -66,60 +66,63 @@
               </div>
               </div>
             </nav>
+            <!-- filtering and sorting -->
+           <div class="filter-row">
+              <h5 class="fw-bold fs-6 pb-2 pt-3"> Filter By:</h5>
+              <div class="row mb-3 align-items-center">
+                <div class="col-12 col-sm-10 col-md-10 col-lg-6">
+                  <div class="filter-select d-flex gap-3">
+                    <select class="form-select select-icon" aria-label="Default select example">
+                      <option selected>Type</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select select-icon" aria-label="Default select example">
+                      <option selected>Dept</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select select-icon" aria-label="Default select example">
+                      <option selected>Grade</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select select-icon" aria-label="Default select example">
+                      <option selected>Branch</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                    <select class="form-select select-icon" aria-label="Default select example">
+                      <option selected>Status</option>
+                      <option value="1">One</option>
+                      <option value="2">Two</option>
+                      <option value="3">Three</option>
+                    </select>
+                  </div>
+                </div>
+                <div class="col-sm-3 ms-auto text-end">
+                  <h5 class="fw-bold fs-6 d-inline-block"> Sort by:</h5>
+                  <select class="form-select bg-transparent d-inline-block w-auto border-0 text-primary" aria-label="Default select example">
+                    <option selected>Newest</option>
+                    <option value="1">One</option>
+                    <option value="2">Two</option>
+                    <option value="3">Three</option>
+                  </select>
+                  <div class="staffs-toggle d-inline-block">
+                    <i class="bi bi-list me-1 text-primary staff-toggle-icon staff-view" data-type='grid'></i>
+                    <i class="bi bi-list-ul text-primary staff-toggle-icon" data-type='list'></i>
+                  </div>
+                </div>
+              </div>
+           </div>
             <!-- Staffs Grid -->
-            <div class="staffs-grid d-block">
+            <div class="staffs-grid">
               <div class="tab-content" id="nav-tabContent">
                 <div class="tab-pane fade show active" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
-                  <h5 class="fw-bold fs-6 pb-2 pt-3"> Filter By:</h5>
-                  <div class="row mb-3 align-items-center">
-                    <div class="col-12 col-sm-10 col-md-10 col-lg-6">
-                      <div class="filter-select d-flex gap-3">
-                        <select class="form-select select-icon" aria-label="Default select example">
-                          <option selected>Type</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select select-icon" aria-label="Default select example">
-                          <option selected>Dept</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select select-icon" aria-label="Default select example">
-                          <option selected>Grade</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select select-icon" aria-label="Default select example">
-                          <option selected>Branch</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                        <select class="form-select select-icon" aria-label="Default select example">
-                          <option selected>Status</option>
-                          <option value="1">One</option>
-                          <option value="2">Two</option>
-                          <option value="3">Three</option>
-                        </select>
-                      </div>
-                    </div>
-                    <div class="col-sm-3 ms-auto text-end">
-                      <h5 class="fw-bold fs-6 d-inline-block"> Sort by:</h5>
-                      <select class="form-select bg-transparent d-inline-block w-auto border-0 text-primary" aria-label="Default select example">
-                        <option selected>Newest</option>
-                        <option value="1">One</option>
-                        <option value="2">Two</option>
-                        <option value="3">Three</option>
-                      </select>
-                      <div class="staffs-toggle d-inline-block">
-                        <i class="bi bi-list me-1 text-primary icon-switch"></i>
-                        <i class="bi bi-list-ul text-primary"></i>
-                      </div>
-                    </div>
-                  </div>
                   <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
                     <div class="col">
                       <a href="staff-profile.html" class="card pt-4">
@@ -535,5 +538,21 @@
   </main>
   <!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+<script>
+  const staffToggle = document.querySelectorAll('.staffs-toggle i');
+  const staffData = document.querySelectorAll('.staffs-grid, .staffs-table');
+
+  for(let i = 0; i < staffToggle.length; i++){
+    staffToggle[i].addEventListener('click', function(ele){
+      if(!ele.target.classList.contains('staff-view')){
+        
+        staffToggle.forEach(staffT => staffT.classList.toggle('staff-view'));
+        
+        staffData.forEach(staffD => staffD.classList.toggle('d-none'));
+        
+      }
+    })
+  }
+</script>
 </body>
 </html>
