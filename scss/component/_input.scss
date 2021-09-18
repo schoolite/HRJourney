@@ -12,3 +12,10 @@
     }
 }
 
+.form-select{
+    &.select-icon{background-image: escape-svg(url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' aria-hidden='true' role='img' width='1em' height='1em' preserveAspectRatio='xMidYMid meet' viewBox='0 0 24 24'><g fill='none'><circle cx='12' cy='12' r='10' stroke='#{$form-select-indicator-color}' stroke-width='2'/><path d='M8 10.5l4 4l4-4' stroke='#{$form-select-indicator-color}' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/></g></svg>"));}
+    &:focus{
+        box-shadow: none;
+    }
+}
+
