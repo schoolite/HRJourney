@@ -12688,6 +12688,23 @@ header {
   left: 70px;
 }
 
+.modal-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 1rem 1rem;
+}
+
+.modal-footer {
+  border-top: none;
+}
+
 .hr-request-title {
   font-size: 18px;
 }
