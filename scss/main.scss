@@ -10,9 +10,9 @@
 @import "component/tabs";
 @import 'layouts/aside';
 @import "layouts/login";
-@import "layouts/browse";
+@import "pages/main.scss";
+@import "layouts/edit";
 @import "layouts/request";
 @import "layouts/reset";
 @import "layouts/history";
-@import "layouts/edit";
-@import "layouts/logout";
+
