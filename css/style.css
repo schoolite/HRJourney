@@ -12686,6 +12686,10 @@ header {
   }
 }
 
+.log {
+  margin-top: 70px;
+}
+
 .login-img {
   height: 90vh;
   background-image: url("../images/login.svg");
@@ -12760,4 +12764,13 @@ header {
 
 .hero-covr {
   padding: 30px;
+}
+
+.hr-wide {
+  width: 115%;
+}
+
+.hr-wid {
+  width: 110%;
+  padding-right: 4px;
 }
