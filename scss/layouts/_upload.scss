@@ -1,0 +1,16 @@
+.hr-board{
+    margin-left: 13rem;
+    width: 100%;
+    min-height: 9vh;
+    margin-top: 4.625rem;
+    // background-color: #FBFCFE;
+
+    @include media-breakpoint-down(md) { 
+        margin-left: 4rem;
+    }
+}
+
+.hr-bulk {
+    position: relative;
+    left: 28px;
+}

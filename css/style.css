@@ -7962,7 +7962,7 @@ header {
       font-size: 1.75rem; } }
 
 .dashboard {
-  margin-left: 12rem;
+  margin-left: 13rem;
   width: 100%;
   min-height: 89vh;
   margin-top: 4.625rem;
@@ -8039,3 +8039,16 @@ header {
 .hr-wid {
   width: 110%;
   padding-right: 4px; }
+
+.hr-board {
+  margin-left: 13rem;
+  width: 100%;
+  min-height: 9vh;
+  margin-top: 4.625rem; }
+  @media (max-width: 767.98px) {
+    .hr-board {
+      margin-left: 4rem; } }
+
+.hr-bulk {
+  position: relative;
+  left: 28px; }
