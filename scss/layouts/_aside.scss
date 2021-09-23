@@ -2,7 +2,7 @@ header{
     position: fixed;
     top:0;
     width: 100%;
-    z-index: 9999;
+    z-index: 10;
 }
 .sidebar {
     position: fixed;
@@ -53,10 +53,11 @@ header{
         }
     }
 
+
 }
 
 .dashboard{
-    margin-left: 12rem;
+    margin-left: 13rem;
     width: 100%;
     min-height: 89vh;
     margin-top: 4.625rem;
@@ -64,6 +65,10 @@ header{
 
     @include media-breakpoint-down(md) { 
         margin-left: 4rem;
+    }
+
+    .staff-toggle-icon{
+        cursor: pointer;
     }
 }
 
