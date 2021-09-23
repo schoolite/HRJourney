@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scale=no">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body class="overflow-hidden">
+<body>
   <header class="header">
     <nav class="navbar navbar-expand-md navbar-light bg-light">
       <div class="container-fluid">
@@ -31,37 +31,410 @@
   </header>
 
   <main class="main">
-    <div class="d-flex">
-      <div class="sidebar">
-        <div class="h-100 text-white bg-light sidebar-content">
-          <ul class="navbar-nav">
-            <li class="nav-item d-block d-md-none">
-              <a href="login.html" class="d-flex align-items-center gap-1 text-decoration-none">
-                <i class="bi bi-search"></i>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="dashboard.html" class="d-flex align-items-center gap-1 text-decoration-none">
-                <i class="bi bi-layout-text-window-reverse"></i>
-                <span class="nav-link d-none d-md-block">Dashboard</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a href="staffs.html" class="d-flex align-items-center gap-1 text-decoration-none">
-                <i class="bi bi-people"></i>
-                <span class="nav-link d-none d-md-block">Staffs</span>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" href="#" class="d-flex align-items-center gap-1 text-decoration-none">
-                <i class="bi bi-box-arrow-right"></i>
-                <span class="nav-link d-none d-md-block">Logout</span>
-              </a>
-            </li>
-          </ul>
-        </div>
+    <div class="sidebar">
+      <div class="h-100 text-white bg-light sidebar-content">
+        <ul class="navbar-nav">
+          <li class="nav-item d-block d-md-none">
+            <a href="login.html" class="d-flex align-items-center gap-1 text-decoration-none">
+              <i class="bi bi-search"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="dashboard.html" class="d-flex align-items-center gap-1 text-decoration-none">
+              <i class="bi bi-layout-text-window-reverse"></i>
+              <span class="nav-link d-none d-md-block">Dashboard</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a href="staffs.html" class="d-flex align-items-center gap-1 text-decoration-none">
+              <i class="bi bi-people"></i>
+              <span class="nav-link d-none d-md-block">Staffs</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" href="#" class="d-flex align-items-center gap-1 text-decoration-none">
+              <i class="bi bi-box-arrow-right"></i>
+              <span class="nav-link d-none d-md-block">Logout</span>
+            </a>
+          </li>
+        </ul>
       </div>
-      <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    </div>
+    <div class="dashboard">
+      <div class="container-fluid">
+        <div class="row gx-0">            
+              <div class="px-2 col-sm-12 col-md-12 col-lg-3">
+                  <div class="profile-card pt-3">
+                        <div class="profile-card-body text-center text-capitalize">
+                            <img src="images/download.png" class="rounded-pill mx-auto d-block w-25" alt="...">
+                            <h4 class="card-title mt-3 fs-6 fw-bold">jane doe</h4>
+                            <h6 class="card-subtitle m-2 profile-text">senior designer</h6>
+                            <p class="text-primary profile-text">active</p>
+                        </div>
+                        <!-- <div class="w-100"></div> -->
+                        <div class="profile-details rounded bg-white d-grid gap-3 shadow px-3 py-4">
+                            <h6 class="fw-bold mb-3 text-capitalize">quick view</h6>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-envelope"></i> Email
+                                  </div>
+                                  <span class="text-capitalize">janedoe@gmail.com</span>
+                            </div>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-telephone"></i> phone
+                                  </div>
+                                  <span class="text-capitalize">090234578092</span>
+                            </div>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-calendar"></i> Date Joined
+                                  </div>
+                                  <span class="text-capitalize">10-05-2013</span>
+                            </div>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-person-badge"></i> Emp No
+                                  </div>
+                                  <span class="text-capitalize">AAA12345</span>
+                            </div>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-inbox"></i> Dept
+                                  </div>
+                                  <span class="text-capitalize">develpment</span>
+                            </div>
+                            <div class="profile-text d-flex justify-content-between">
+                                  <div class="icon-cont">
+                                      <i class="bi bi-person"></i> Reports to
+                                  </div>
+                                  <span class="text-capitalize">jane doe</span>
+                            </div>
+                        </div>
+                  </div>
+                  <button class="btn btn-primary text-uppercase profile-text text-white px-4 mx-auto my-4">terminate</button>
+              </div>
+              <div class="col-sm-12 col-md-12 col-lg-9 bg-white pt-3">
+                  <div class="container-fluid">
+                        <nav>
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                  <button class="nav-link active py-1" id="nav-full-tab" data-bs-toggle="tab" data-bs-target="#nav-full" type="button" role="tab" aria-controls="nav-full" aria-selected="true">Full Info</button>
+                                  <button class="nav-link py-1" id="nav-edit-request-tab" data-bs-toggle="tab" data-bs-target="#nav-edit-request" type="button" role="tab" aria-controls="nav-edit-request" aria-selected="false">Edit Request (3)</button>
+                                  <button class="nav-link py-1" id="nav-edit-history-tab" data-bs-toggle="tab" data-bs-target="#nav-edit-history" type="button" role="tab" aria-controls="nav-edit-history" aria-selected="false">Edit History</button>
+              
+                                  <button type="button" class="btn bg-white text-uppercase d-inline-block px-4 py-1 me-2">Reset</button>
+                                  <button class="btn btn-primary text-uppercase text-white px-4 py-1">Save</button> 
+                            </div>
+                        </nav>
+                        <div class="px-4 tab-content" id="nav-tabContent">
+                            <div class="tab-pane fade show active" id="nav-full" role="tabpanel" aria-labelledby="nav-full-tab">
+                                  <h5 class="fw-bold fs-6 pb-3 pt-4"> Profile completion - 89%</h5>
+                                  <div class="add-user overflow-scroll vh-100">
+                                      <form class="add-details">
+                                            <div class="border border-primary rounded p-4">
+                                                <span class="text-capitalize fw-bold">basic details &nbsp; <i class="bi bi-caret-up-fill"></i></span>
+                                                <div class="row my-3 gx-5">
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="firstname"> First Name </label>
+                                                          <input type="text" class="form-control" id="firstname" name="firstname">
+                                                      </div>
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="lastname"> Last Name </label>
+                                                          <input type="text" class="form-control" id="lastname" name="lastname">
+                                                      </div>
+                                                </div>
+                                                <div class="row mb-3 gx-5">
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="middlename"> Middle Name</label>
+                                                          <input type="text" class="form-control" id="middlename" name="middlename">
+                                                      </div>
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="Status"> Status </label>
+                                                          <select class="form-select" aria-label="Default select example">
+                                                                <option selected>Active</option>
+                                                                <option value="1">One</option>
+                                                                <option value="2">Two</option>
+                                                                <option value="3">Three</option>
+                                                          </select>
+                                                      </div>
+                                                </div>
+                                                <div class="row mb-3 gx-5">
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="Status"> Gender </label>
+                                                          <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Male</option>
+                                                                <option value="2">Female</option>
+                                                          </select>
+                                                      </div>
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="Status"> Salutation </label>
+                                                          <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Male</option>
+                                                                <option value="2">Female</option>
+                                                          </select>
+                                                      </div>
+                                                </div>
+                                                <div class="row mb-3 gx-5">
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="DOB"> Date of Birth</label>
+                                                          <input type="text" class="form-control" id="DOB" name="DOB">
+                                                      </div>
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="joining"> Date of Joining</label>
+                                                          <input type="text" class="form-control" id="joining" name="joining">
+                                                      </div>
+                                                </div>
+                                                <div class="row gx-5">
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="joining"> Employment Type</label>
+                                                          <select class="form-select" aria-label="Default select example">
+                                                                <option selected></option>
+                                                                <option value="1">Male</option>
+                                                                <option value="2">Female</option>
+                                                          </select>
+                                                      </div>
+                                                      <div class="col-12 col-md-6">
+                                                          <label for="number"> Employment Number</label>
+                                                          <input type="tel" class="form-control" id="number" name="number">
+                                                      </div>
+                                                </div>
+                                            </div>
+                                      </form>
+                                      <!-- Accordion -->
+                                      <div class="accordion accordion-flush" id="accordionFlushExample">
+                                            <div class="accordion-item my-4">
+                                              <h2 class="accordion-header border-primary" id="flush-headingOne">
+                                                <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+                                                  Emergency Contact
+                                                </button>
+                                              </h2>
+                                              <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                                                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
+                                              </div>
+                                            </div>
+                                            <div class="accordion-item">
+                                                <h2 class="accordion-header border-primary" id="flush-headingTwo">
+                                                  <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+                                                    Joining Details
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                <h2 class="accordion-header border-primary" id="flush-headingThree">
+                                                  <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+                                                    Department & Grade
+                                                  </button>
+                                                </h2>
+                                                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                  <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingFour">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+                                                        Salary Details
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingFive">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+                                                        Healthy Insurance
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingSix">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+                                                        Contact Details
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingSeven">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+                                                        Personal Bio
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingEight">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
+                                                        Personal Details
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingNine">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
+                                                        Educational Qualification
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingTen">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
+                                                        Previous Work Experiene
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingEleven">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
+                                                        History in Company
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                              <div class="accordion-item">
+                                                    <h2 class="accordion-header border-primary" id="flush-headingTwelve">
+                                                      <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
+                                                        Exit
+                                                      </button>
+                                                    </h2>
+                                                    <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
+                                                      <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
+                                                    </div>
+                                              </div>
+                                      </div>
+                                  </div>
+                            </div>
+                            <div class="tab-pane fade" id="nav-edit-request" role="tabpanel" aria-labelledby="nav-edit-request-tab">
+                              <div class="my-4">
+                                <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
+                                  <span class="text-capitalize fw-bold">basic details</span>
+                                  <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Middle Name</span> form <span class="text-info">Joy</span> to <span class="text-info">Jay</span></p>
+                                  <span class="text-secondary hr-request-title-link" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">Review</span>
+                                </div>
+                                <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
+                                  <span class="text-capitalize fw-bold">basic details</span>
+                                  <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Salutation</span> form <span class="text-info">Miss</span> to <span class="text-info">Mrs</span></p>
+                                  <a href="#" class="text-secondary text-success hr-request-title-link">Review</a>
+                                </div>
+                                <div class="hr-request bg-light shadow-sm w-75 p-4 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
+                                    <span class="text-capitalize fw-bold">basic details</span>
+                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Gender</span> form <span class="text-info">Male</span> to <span class="text-info">Female</span></p>
+                                    <a href="#" class="text-secondary text-danger hr-request-title-link">Review</a>
+                                </div>
+                                <!-- Edit Request popup -->
+                                <div class="modal fade" id="editRequest" tabindex="-1" aria-labelledby="editRequest" aria-hidden="true">
+                                  <div class="modal-dialog">
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                        <h5 class="hr-edit-header modal-title fw-bold" id="editRequest">Review Edit Request</h5>
+                                      </div>
+                                      <div class="modal-body">
+                                        <form>
+                                            <div class="form-check form-check-inline mb-1">
+                                                <input class="hr-accept form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+                                                <label class="hr-edit-label  form-check-label" for="inlineRadio1">Accept</label>
+                                            </div>
+                                            <div class="form-check form-check-inline">
+                                                <input class="hr-edit-label hr-decline form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+                                                <label class="hr-edit-label form-check-label" for="inlineRadio2">Decline</label>
+                                            </div>
+                                          <div class="">
+                                            <label for="message-text" class="col-form-label">Comment   <span class="text-danger">*</span></label>
+                                            <textarea class="form-control" id="message-text"></textarea>
+                                          </div>
+                                        </form>
+                                      </div>
+                                      <div class="modal-footer justify-content-center">
+                                        <button type="button" class="btn btn-primary text-uppercase text-light">Proceed</button>
+                                      </div>
+                                    </div>
+                                  </div>
+                                </div>
+                              </div> 
+                            </div>
+                            <div class="tab-pane fade" id="nav-edit-history" role="tabpanel" aria-labelledby="nav-edit-history-tab">
+                              <div class="my-4">
+                                <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
+                                  <span class="text-capitalize fw-bold">August 15, 1:06PM</span>
+                                  <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Middle Name</span> form <span class="text-info">Joy</span> to <span class="text-info">Jay</span></p>
+                                  <a href="#" class="text-primary text-decoration-none hr-request-title-link"  data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">User</a>
+                                </div>
+                                <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
+                                  <span class="text-capitalize fw-bold">August 15, 12:00PM</span>
+                                  <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Salutation</span> form <span class="text-info">Miss</span> to <span class="text-info">Mrs</span></p>
+                                  <a href="#" class="text-primary text-decoration-none hr-request-title-link"  data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">HR</a>
+                                </div>
+                                <div class="hr-request bg-light shadow-sm w-75 p-4 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
+                                    <span class="text-capitalize fw-bold">August 14, 11:00AM</span>
+                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Gender</span> form <span class="text-info">Male</span> to <span class="text-info">Female</span></p>
+                                    <a href="#" class="text-primary text-decoration-none hr-request-title-link" data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">Manager</a>
+                                </div>
+                              </div>
+                            </div>
+                            <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                    <div class="hr-wid modal-content">
+                                        <div class="modal-header">
+                                            <h5 class="hr-edit-header modal-title fw-bold" id="exampleModalLabel">Edit History</h5>
+                                        </div>
+                                        <div class="modal-body">
+                                            <div><p class="text-center fw-bold">Would you like to reverse this change?</p></div>
+                                        </div>
+                                        <div class="hr-m modal-footer text-end me-4 mb-2">
+                                            <button type="button" class="btn text-uppercase text-secondary fw-lighter" data-bs-dismiss="modal">Cancel</button>
+                                            <button type="button" class="btn btn-danger text-uppercase text-light fw-lighter">Reverse</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>                          
+                        </div>
+                  </div>
+              </div>         
+        </div>
+
+          <!-- Edit History popup -->
+          <div class="modal fade" id="historypopup" tabindex="-1" aria-labelledby="historypopup" aria-hidden="true">
+          <div class="modal-dialog">
+              <div class="modal-content">
+                  <div class="modal-header">
+                      <h5 class="hr-edit-header modal-title fw-bold" id="historypopup">Edit History</h5>
+                  </div>
+                  <div class="modal-body">
+                      <div><p class="text-center fw-bold">Would you like to reverse this change?</p></div>
+                  </div>
+                  <div class="modal-footer text-end me-4 mb-2">
+                      <button type="button" class="btn text-uppercase text-secondary" data-bs-dismiss="modal">Cancel</button>
+                      <button type="button" class="btn btn-danger text-uppercase text-light">Reverse</button>
+                  </div>
+              </div>
+          </div>
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
           <div class="modal-dialog">
               <div class="modal-content">
                   <div class="modal-header">
@@ -75,380 +448,6 @@
                       <button type="button" class="btn btn-danger text-uppercase text-light fw-lighter">Logout</button>
                   </div>
               </div>
-          </div>
-        </div>
-      <div class="dashboard">
-        <div class="container-fluid">
-          <div class="row gx-0">            
-               <div class="px-2 col-sm-12 col-md-12 col-lg-3 ">
-                    <div class="profile-card pt-3">
-                         <div class="profile-card-body text-center text-capitalize">
-                              <img src="images/download.png" class="rounded-pill mx-auto d-block w-25" alt="...">
-                              <h4 class="card-title mt-3 fs-6 fw-bold">jane doe</h4>
-                              <h6 class="card-subtitle m-2 profile-text">senior designer</h6>
-                              <p class="text-primary profile-text">active</p>
-                         </div>
-                         <!-- <div class="w-100"></div> -->
-                         <div class="profile-details rounded bg-white d-grid gap-3 shadow px-3 py-4">
-                              <h6 class="fw-bold mb-3 text-capitalize">quick view</h6>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-envelope"></i> Email
-                                   </div>
-                                   <span class="text-capitalize">janedoe@gmail.com</span>
-                              </div>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-telephone"></i> phone
-                                   </div>
-                                   <span class="text-capitalize">090234578092</span>
-                              </div>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-calendar"></i> Date Joined
-                                   </div>
-                                   <span class="text-capitalize">10-05-2013</span>
-                              </div>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-person-badge"></i> Emp No
-                                   </div>
-                                   <span class="text-capitalize">AAA12345</span>
-                              </div>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-inbox"></i> Dept
-                                   </div>
-                                   <span class="text-capitalize">develpment</span>
-                              </div>
-                              <div class="profile-text d-flex justify-content-between">
-                                   <div class="icon-cont">
-                                        <i class="bi bi-person"></i> Reports to
-                                   </div>
-                                   <span class="text-capitalize">jane doe</span>
-                              </div>
-                         </div>
-                    </div>
-                    <button class="btn btn-primary text-uppercase profile-text text-white px-4 mx-auto my-4">terminate</button>
-               </div>
-               <div class="col-sm-12 col-md-12 col-lg-9 bg-white pt-3">
-                    <div class="container-fluid">
-                         <nav>
-                              <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                                   <button class="nav-link active py-1" id="nav-full-tab" data-bs-toggle="tab" data-bs-target="#nav-full" type="button" role="tab" aria-controls="nav-full" aria-selected="true">Full Info</button>
-                                   <button class="nav-link py-1" id="nav-edit-request-tab" data-bs-toggle="tab" data-bs-target="#nav-edit-request" type="button" role="tab" aria-controls="nav-edit-request" aria-selected="false">Edit Request (3)</button>
-                                   <button class="nav-link py-1" id="nav-edit-history-tab" data-bs-toggle="tab" data-bs-target="#nav-edit-history" type="button" role="tab" aria-controls="nav-edit-history" aria-selected="false">Edit History</button>
-                
-                                   <button type="button" class="btn bg-white text-uppercase d-inline-block px-4 py-1 me-2">Reset</button>
-                                   <button class="btn btn-primary text-uppercase text-white px-4 py-1">Save</button> 
-                              </div>
-                         </nav>
-                         <div class="px-4 tab-content" id="nav-tabContent">
-                              <div class="tab-pane fade show active" id="nav-full" role="tabpanel" aria-labelledby="nav-full-tab">
-                                   <h5 class="fw-bold fs-6 pb-3 pt-4"> Profile completion - 89%</h5>
-                                   <div class="add-user overflow-scroll vh-100">
-                                        <form class="add-details">
-                                             <div class="border border-primary rounded p-4">
-                                                  <span class="text-capitalize fw-bold">basic details &nbsp; <i class="bi bi-caret-up-fill"></i></span>
-                                                  <div class="row my-3 gx-5">
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="firstname"> First Name </label>
-                                                            <input type="text" class="form-control" id="firstname" name="firstname">
-                                                       </div>
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="lastname"> Last Name </label>
-                                                            <input type="text" class="form-control" id="lastname" name="lastname">
-                                                       </div>
-                                                  </div>
-                                                  <div class="row mb-3 gx-5">
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="middlename"> Middle Name</label>
-                                                            <input type="text" class="form-control" id="middlename" name="middlename">
-                                                       </div>
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="Status"> Status </label>
-                                                            <select class="form-select" aria-label="Default select example">
-                                                                 <option selected>Active</option>
-                                                                 <option value="1">One</option>
-                                                                 <option value="2">Two</option>
-                                                                 <option value="3">Three</option>
-                                                            </select>
-                                                       </div>
-                                                  </div>
-                                                  <div class="row mb-3 gx-5">
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="Status"> Gender </label>
-                                                            <select class="form-select" aria-label="Default select example">
-                                                                 <option selected></option>
-                                                                 <option value="1">Male</option>
-                                                                 <option value="2">Female</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="Status"> Salutation </label>
-                                                            <select class="form-select" aria-label="Default select example">
-                                                                 <option selected></option>
-                                                                 <option value="1">Male</option>
-                                                                 <option value="2">Female</option>
-                                                            </select>
-                                                       </div>
-                                                  </div>
-                                                  <div class="row mb-3 gx-5">
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="DOB"> Date of Birth</label>
-                                                            <input type="text" class="form-control" id="DOB" name="DOB">
-                                                       </div>
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="joining"> Date of Joining</label>
-                                                            <input type="text" class="form-control" id="joining" name="joining">
-                                                       </div>
-                                                  </div>
-                                                  <div class="row gx-5">
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="joining"> Employment Type</label>
-                                                            <select class="form-select" aria-label="Default select example">
-                                                                 <option selected></option>
-                                                                 <option value="1">Male</option>
-                                                                 <option value="2">Female</option>
-                                                            </select>
-                                                       </div>
-                                                       <div class="col-12 col-md-6">
-                                                            <label for="number"> Employment Number</label>
-                                                            <input type="tel" class="form-control" id="number" name="number">
-                                                       </div>
-                                                  </div>
-                                             </div>
-                                        </form>
-                                        <!-- Accordion -->
-                                        <div class="accordion accordion-flush" id="accordionFlushExample">
-                                             <div class="accordion-item my-4">
-                                               <h2 class="accordion-header border-primary" id="flush-headingOne">
-                                                 <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                                                   Emergency Contact
-                                                 </button>
-                                               </h2>
-                                               <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
-                                                 <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the first item's accordion body.</div>
-                                               </div>
-                                             </div>
-                                             <div class="accordion-item">
-                                                  <h2 class="accordion-header border-primary" id="flush-headingTwo">
-                                                    <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                                                      Joining Details
-                                                    </button>
-                                                  </h2>
-                                                  <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item's accordion body. Let's imagine this being filled with some actual content.</div>
-                                                  </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                  <h2 class="accordion-header border-primary" id="flush-headingThree">
-                                                    <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                                                      Department & Grade
-                                                    </button>
-                                                  </h2>
-                                                  <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                    <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                  </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingFour">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                                                         Salary Details
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingFive">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                                                         Healthy Insurance
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingSix">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                                                         Contact Details
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingSeven">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
-                                                         Personal Bio
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseSeven" class="accordion-collapse collapse" aria-labelledby="flush-headingSeven" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingEight">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEight" aria-expanded="false" aria-controls="flush-collapseEight">
-                                                         Personal Details
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseEight" class="accordion-collapse collapse" aria-labelledby="flush-headingEight" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingNine">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseNine" aria-expanded="false" aria-controls="flush-collapseNine">
-                                                         Educational Qualification
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseNine" class="accordion-collapse collapse" aria-labelledby="flush-headingNine" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingTen">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTen" aria-expanded="false" aria-controls="flush-collapseTen">
-                                                         Previous Work Experiene
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseTen" class="accordion-collapse collapse" aria-labelledby="flush-headingTen" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingEleven">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseEleven" aria-expanded="false" aria-controls="flush-collapseEleven">
-                                                         History in Company
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseEleven" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                                <div class="accordion-item">
-                                                     <h2 class="accordion-header border-primary" id="flush-headingTwelve">
-                                                       <button class="accordion-button collapsed gap-4" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwelve" aria-expanded="false" aria-controls="flush-collapseTwelve">
-                                                         Exit
-                                                       </button>
-                                                     </h2>
-                                                     <div id="flush-collapseTwelve" class="accordion-collapse collapse" aria-labelledby="flush-headingThree" data-bs-parent="#accordionFlushExample">
-                                                       <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the third item's accordion body. Nothing more exciting happening here in terms of content, but just filling up the space to make it look, at least at first glance, a bit more representative of how this would look in a real-world application.</div>
-                                                     </div>
-                                                </div>
-                                        </div>
-                                   </div>
-                              </div>
-                              <div class="tab-pane fade" id="nav-edit-request" role="tabpanel" aria-labelledby="nav-edit-request-tab">
-                                <div class="my-4">
-                                  <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
-                                    <span class="text-capitalize fw-bold">basic details</span>
-                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Middle Name</span> form <span class="text-info">Joy</span> to <span class="text-info">Jay</span></p>
-                                    <span class="text-secondary hr-request-title-link" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">Review</span>
-                                  </div>
-                                  <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
-                                    <span class="text-capitalize fw-bold">basic details</span>
-                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Salutation</span> form <span class="text-info">Miss</span> to <span class="text-info">Mrs</span></p>
-                                    <a href="#" class="text-secondary text-success hr-request-title-link">Review</a>
-                                  </div>
-                                  <div class="hr-request bg-light shadow-sm w-75 p-4 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#editRequest" data-bs-whatever="@getbootstrap">
-                                      <span class="text-capitalize fw-bold">basic details</span>
-                                      <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Gender</span> form <span class="text-info">Male</span> to <span class="text-info">Female</span></p>
-                                      <a href="#" class="text-secondary text-danger hr-request-title-link">Review</a>
-                                  </div>
-                                  <!-- Edit Request popup -->
-                                  <div class="modal fade" id="editRequest" tabindex="-1" aria-labelledby="editRequest" aria-hidden="true">
-                                    <div class="modal-dialog">
-                                      <div class="modal-content">
-                                        <div class="modal-header">
-                                          <h5 class="hr-edit-header modal-title fw-bold" id="editRequest">Review Edit Request</h5>
-                                        </div>
-                                        <div class="modal-body">
-                                          <form>
-                                              <div class="form-check form-check-inline mb-1">
-                                                  <input class="hr-accept form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
-                                                  <label class="hr-edit-label  form-check-label" for="inlineRadio1">Accept</label>
-                                              </div>
-                                              <div class="form-check form-check-inline">
-                                                  <input class="hr-edit-label hr-decline form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
-                                                  <label class="hr-edit-label form-check-label" for="inlineRadio2">Decline</label>
-                                              </div>
-                                            <div class="">
-                                              <label for="message-text" class="col-form-label">Comment   <span class="text-danger">*</span></label>
-                                              <textarea class="form-control" id="message-text"></textarea>
-                                            </div>
-                                          </form>
-                                        </div>
-                                        <div class="modal-footer justify-content-center">
-                                          <button type="button" class="btn btn-primary text-uppercase text-light">Proceed</button>
-                                        </div>
-                                      </div>
-                                    </div>
-                                  </div>
-                                </div> 
-                              </div>
-                              <div class="tab-pane fade" id="nav-edit-history" role="tabpanel" aria-labelledby="nav-edit-history-tab">
-                                <div class="my-4">
-                                  <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
-                                    <span class="text-capitalize fw-bold">August 15, 1:06PM</span>
-                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Middle Name</span> form <span class="text-info">Joy</span> to <span class="text-info">Jay</span></p>
-                                    <a href="#" class="text-primary text-decoration-none hr-request-title-link"  data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">User</a>
-                                  </div>
-                                  <div class="hr-request bg-light shadow-sm w-75 p-3 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
-                                    <span class="text-capitalize fw-bold">August 15, 12:00PM</span>
-                                    <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Salutation</span> form <span class="text-info">Miss</span> to <span class="text-info">Mrs</span></p>
-                                    <a href="#" class="text-primary text-decoration-none hr-request-title-link"  data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">HR</a>
-                                  </div>
-                                  <div class="hr-request bg-light shadow-sm w-75 p-4 mb-2 bg-body rounded col-3" data-bs-toggle="modal" data-bs-target="#historypopup" data-bs-whatever="@getbootstrap">
-                                      <span class="text-capitalize fw-bold">August 14, 11:00AM</span>
-                                      <p class="hr-request-title-decription fw-light">Change <span class="fw-bold">Gender</span> form <span class="text-info">Male</span> to <span class="text-info">Female</span></p>
-                                      <a href="#" class="text-primary text-decoration-none hr-request-title-link" data-bs-toggle="modal" data-bs-target="#exampleModa" data-bs-whatever="@getbootstrap">Manager</a>
-                                  </div>
-                                </div>
-                              </div>
-                              <div class="modal fade" id="exampleModa" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                  <div class="modal-dialog">
-                                      <div class="hr-wid modal-content">
-                                          <div class="modal-header">
-                                              <h5 class="hr-edit-header modal-title fw-bold" id="exampleModalLabel">Edit History</h5>
-                                          </div>
-                                          <div class="modal-body">
-                                              <div><p class="text-center fw-bold">Would you like to reverse this change?</p></div>
-                                          </div>
-                                          <div class="hr-m modal-footer text-end me-4 mb-2">
-                                              <button type="button" class="btn text-uppercase text-secondary fw-lighter" data-bs-dismiss="modal">Cancel</button>
-                                              <button type="button" class="btn btn-danger text-uppercase text-light fw-lighter">Reverse</button>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                              <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>                          
-                         </div>
-                    </div>
-               </div>         
-          </div>
-
-           <!-- Edit History popup -->
-           <div class="modal fade" id="historypopup" tabindex="-1" aria-labelledby="historypopup" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="hr-edit-header modal-title fw-bold" id="historypopup">Edit History</h5>
-                    </div>
-                    <div class="modal-body">
-                        <div><p class="text-center fw-bold">Would you like to reverse this change?</p></div>
-                    </div>
-                    <div class="modal-footer text-end me-4 mb-2">
-                        <button type="button" class="btn text-uppercase text-secondary" data-bs-dismiss="modal">Cancel</button>
-                        <button type="button" class="btn btn-danger text-uppercase text-light">Reverse</button>
-                    </div>
-                </div>
-            </div>
           </div>
         </div>
       </div>
