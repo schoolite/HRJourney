@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="css/style.css">
     <title>Document</title>
 </head>
-<body>
+<body class="">
     <header class="header">
         <nav class="navbar navbar-expand-md navbar-light bg-light">
         <div class="container-fluid">
@@ -35,24 +35,35 @@
             <div class="sidebar">
                 <div class="h-100 text-white bg-light sidebar-content">
                 <ul class="navbar-nav">
-                    <li class="nav-item d-flex align-items-center gap-1">
-                    <i class="bi bi-layout-text-window-reverse"></i>
-                    <a class="nav-link active d-none d-md-block" aria-current="page" href="dashboard.html">Dashboard</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center gap-1">
-                    <i class="bi bi-people"></i>
-                    <a class="nav-link d-none d-md-block" href="staffs.html">Staffs</a>
-                    </li>
-                    <li class="nav-item d-flex align-items-center gap-1">
-                    <i class="bi bi-box-arrow-right"></i>
-                    <a class="nav-link d-none d-md-block" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" href="#">Logout</a>
-                    </li>
+                  <li class="nav-item d-block d-md-none">
+                    <a href="login.html" class="d-flex align-items-center gap-1 text-decoration-none">
+                      <i class="bi bi-search"></i>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="dashboard.html" class="d-flex align-items-center gap-1 text-decoration-none">
+                      <i class="bi bi-layout-text-window-reverse"></i>
+                      <span class="nav-link d-none d-md-block">Dashboard</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="staffs.html" class="d-flex align-items-center gap-1 text-decoration-none">
+                      <i class="bi bi-people"></i>
+                      <span class="nav-link d-none d-md-block">Staffs</span>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a  data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap" href="#" class="d-flex align-items-center gap-1 text-decoration-none">
+                      <i class="bi bi-box-arrow-right"></i>
+                      <span class="nav-link d-none d-md-block">Logout</span>
+                    </a>
+                  </li>
                 </ul>
                 </div>
             </div>
             <div class="log modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
                 <div class="modal-dialog modal-sm">
-                    <div class="hr-wide modal-content">
+                    <div class="hr-widdle modal-content">
                         <div class="modal-header">
                             <h5 class="hr-edit-header modal-title fw-bold" id="exampleModalLabel">Log Out</h5>
                         </div>
@@ -70,29 +81,29 @@
                 <div class="container-fluid p-3">
                     <nav>
                         <div class="nav nav-tabs" id="nav-tab" role="tablist">
-                            <button class="nav-link active bg-transparent" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">People > </button>
-                            <button class="nav-link bg-transparent" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">Bulk Upload</button>
+                            <button class="nav-link active bg-transparent" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="true">People </button>
+                            <button class="nav-link bg-transparent" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="false">New employees</button>
                         </div>
                     </nav>
                 </div>
             </div>
         </div>
-        <div class="d-flex justify-content-center bg-light-100">
+        <div class="d-flex justify-content-center bg-light-100 col-11 px-5">
             <div class="hr-bulk bg-light-200 shadow-sm vh-100 rounded w-75">
                 <div class="border-bottom border-light-300">
                     <div class="d-flex justify-content-between align-items-center pt-2">
                         <div class="fw-bold">
-                            <h5 class="fs-5 px-5 fw-bold">Bulk Upload of Employees</h5>
+                            <h5 class="fs-5 px-5 fw-bold">Add New Employees</h5>
                         </div>
                         <div class="d-flex flex-row mb-2">
-                            <button type="button" class="btn btn-light px-4 me-2">Reset</button>
-                            <button type="button" class="btn bg-primary px-4 me-3">Save</button>
+                            <button type="button" class="btn btn-light px-5 me-2">Reset</button>
+                            <button type="button" class="btn bg-primary px-5 me-3 text-light">Save</button>
                         </div>
                     </div>
                 </div>
-                <div class="px-4 tab-content" id="nav-tabContent">
+                <div class="hr-employee px-4 tab-content" id="nav-tabContent">
                     <div class="tab-pane fade show active" id="nav-full" role="tabpanel" aria-labelledby="nav-full-tab">
-                         <div class="add-user overflow-scroll vh-100 pt-5">
+                         <div class=" add-user vh-100  pt-5">
                               <form class="add-details">
                                    <div class="border border-primary rounded p-4">
                                         <span class="text-capitalize fw-bold">basic details &nbsp; <i class="bi bi-caret-up-fill"></i></span>
