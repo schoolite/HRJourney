@@ -1,24 +1,19 @@
-header{
-    position: fixed;
-    top:0;
+.main{
     width: 100%;
-    z-index: 10;
+    height: 100%;
+    margin-top: 4.625rem;
 }
 .sidebar {
+    margin: 0; 
+    padding: 0;
+    width: 4.375rem;
     position: fixed;
-    top: 4.625rem;
-    bottom: 0;
-    left: 0;
-    z-index: 100;
+    height: 100%;
     box-shadow: inset -1px 0 0 rgba(0, 0, 0, .1);
     z-index: 99;
 
-    &-content {
+    @include media-breakpoint-up(md) { 
         width: 12rem;
-
-        @include media-breakpoint-down(md) { 
-            width: 4rem;
-        }
     }
 
     & .nav-item{
@@ -57,12 +52,13 @@ header{
 }
 
 .dashboard{
-    margin-left: 12rem;
-    min-height: 89vh;
-    margin-top: 4.625rem;
+    margin-left: 4.375rem;
+    min-height: 100%;
+    min-height: 89.4vh;
+    background-color: #FBFCFE;
 
-    @include media-breakpoint-down(md) { 
-        margin-left: 4rem;
+    @include media-breakpoint-up(md) { 
+        margin-left: 12rem;
     }
 
     .staff-toggle-icon{
