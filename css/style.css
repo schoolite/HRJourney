@@ -12803,3 +12803,10 @@ header {
   position: relative;
   left: 28px;
 }
+
+.hr-dash-intro {
+  background-image: url("../images/welcomebg.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
