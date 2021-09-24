@@ -7839,6 +7839,36 @@ a {
   .card-footer {
     background: none; }
 
+.oraganogram-cont {
+  display: flex;
+  flex-direction: column;
+  height: 180px;
+  width: 100px; }
+
+.oraganogram-img {
+  width: 100%;
+  height: 100px; }
+
+.oraganogram-info {
+  width: 100%;
+  height: 60px;
+  margin-top: 10px; }
+
+.oraganogram-list-text {
+  font-size: 12px; }
+
+.oraganogram-list {
+  list-style: none;
+  text-align: left;
+  padding: 0 5px; }
+
+.color {
+  background-color: grey;
+  padding: 0 5px;
+  height: 20px;
+  display: flex;
+  align-items: center; }
+
 .input-icon {
   position: relative; }
   .input-icon i {
