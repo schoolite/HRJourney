@@ -8030,7 +8030,11 @@ a {
   padding: 30px; }
 
 .hr-wide {
-  width: 115%; }
+  width: 50%; }
+
+.hr-widdle {
+  width: 343px;
+  margin: 0 auto; }
 
 .hr-wid {
   width: 110%;
