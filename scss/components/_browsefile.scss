@@ -1,0 +1,10 @@
+.hero{
+    &-man {
+        padding: 80px 35px;
+        border: 2px dashed $primary;
+    }
+
+    &-covr {
+        padding: 30px;
+    }
+}

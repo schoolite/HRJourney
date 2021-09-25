@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
     <link rel="stylesheet" href="css/style.css">
-    <title>HR Lourney | Bulk Upload</title>
+    <title>HR Lourney | Organogram</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
                       <input type="text" class="form-control rounded-pill" placeholder="Search or type a compound " aria-label="Search">
                     </div>
                 </form>
-                 <!-- Staff Profile -->
+                <!-- Staff Profile -->
                 <div class="d-none d-md-block py-2 ps-3 dropdown">
                     <div class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
                         <img src="./images/logo.svg" class="img-fluid rounded-circle me-2" width="40" height="40" alt="user"> <span>Hello Jane</span>
@@ -69,23 +69,23 @@
                 <div class="left-sidebar bg-white">
                     <ul class="navbar-nav">
                         <li class="nav-item fw-bold py-2 ps-3">
-                          <a href="dashboard.html" class="d-flex align-items-center gap-1">
+                        <a href="dashboard.html" class="d-flex align-items-center gap-1">
                             <i class="bi bi-layout-text-window-reverse"></i>Dashboard
-                          </a>
+                        </a>
                         </li>
                         <li class="nav-item fw-bold py-2 ps-3">
-                          <a href="staffs.html" class="d-flex align-items-center gap-1">
+                        <a href="staffs.html" class="d-flex align-items-center gap-1">
                             <i class="bi bi-people"></i>Staffs
-                          </a>
+                        </a>
                         </li>
                         <li class="nav-item fw-bold py-2 ps-3">
-                          <a  data-bs-toggle="modal" data-bs-target="#logout" data-bs-whatever="@getbootstrap" href="#" class="d-flex align-items-center gap-1">
+                        <a  data-bs-toggle="modal" data-bs-target="#logout" data-bs-whatever="@getbootstrap" href="#" class="d-flex align-items-center gap-1">
                             <i class="bi bi-box-arrow-right"></i>Logout
-                          </a>
+                        </a>
                         </li>
                     </ul>
 
-                       <!-- Staff Profile -->
+                    <!-- Staff Profile -->
                     <div class="d-block d-md-none py-2 ps-3 dropdown">
                         <div class="dropdown-toggle" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false" >
                             <img src="./images/logo.svg" class="img-fluid rounded-circle me-2" width="40" height="40" alt="user"> <span>Hello Jane</span>
@@ -103,50 +103,39 @@
             <!-- Content -->
             <main role="main" class="content bg-light col-md-10 ms-sm-auto col-lg-10 px-2">
                 <!-- Content Nav -->
-
-                <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
-                    <nav style="--bs-breadcrumb-divider: '>';" aria-label="breadcrumb">
-                        <ol class="breadcrumb fw-bold">
-                            <li class="breadcrumb-item"><a href="staffs.html">People</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Bulk</li>
-                        </ol>
-                    </nav>
-                </div>
+                <nav>
+                    <div class="nav nav-tabs align-items-end" id="nav-tab" role="tablist">
+                        <a href="staffs.html"><button class="nav-link active bg-transparent px-4" id="nav-all-tab" data-bs-toggle="tab" data-bs-target="#nav-all" type="button" role="tab" aria-controls="nav-all" aria-selected="false">All</button></a>
+                        <button class="nav-link bg-transparent px-4 ms-2" id="nav-organization-tab" data-bs-toggle="tab" data-bs-target="#nav-organization" type="button" role="tab" aria-controls="nav-organization" aria-selected="true">Organization</button>
+        
+                        <div class="ms-auto mb-2 mt-3">
+                            <a href="staffs.html" type="button" class="btn btn-primary rounded-pill px-4 d-inline-block me-2 text-white"><i class="bi bi-file-earmark-image"></i>&nbsp; Change Image</a>
+                        </div>
+                    </div>
+                </nav>
                 <div class="container-fluid">
-                    <div class="bg-light-100">
-                        <div class="bg-light-200 shadow-sm vh-100 rounded w-75">
-                            <div class="border-bottom border-light-300">
-                                <div class="d-flex justify-content-between align-items-center pt-2">
-                                    <div class="fw-bold">
-                                        <h5 class="fs-5 px-5 fw-bold">Bulk Upload of Employees</h5>
+                    <!-- Staffs Grid -->
+                    <div class="staff-grid">
+                        <div class="tab-content" id="nav-tabContent">
+                        <div class="tab-pane fade" id="nav-all" role="tabpanel" aria-labelledby="nav-all-tab">
+                        </div>
+                        <div class="tab-pane fade  show active" id="nav-organization" role="tabpanel" aria-labelledby="nav-organization-tab">
+                            <div class="container-fluid ">
+                                <div class="oraganogram-cont my-4 shadow mx-auto">
+                                    <div>
+                                        <img src="images/google.png" alt="" class="oraganogram-img">
                                     </div>
-                                    <div class="d-flex flex-row mb-2">
-                                        <button type="button" class="btn btn-light px-5 me-2">Reset</button>
-                                        <button type="button" class="btn bg-primary px-5 me-3 text-light">Save</button>
+                                    <div class="oraganogram-info">
+                                        <ul class="oraganogram-list">
+                                            <li class="oraganogram-list-text">lorem</li>
+                                            <li class="oraganogram-list-text">lorem</li>
+                                            <li class="oraganogram-list-text">lorem</li>
+                                        </ul>
                                     </div>
+                                    <div class="color">a</div>
                                 </div>
                             </div>
-                            <div class="" id="nav-organization" role="tabpanel" aria-labelledby="nav-organization-tab">
-                                <h5 class="fw-bold fs-6 pb-2 pt-3 fs-5 px-5"> No file upload yet. You can upload jpg or png format</h5>
-                                <div class="br-browse container-fluid">
-                                    <div class="hero-covr  d-flex justify-content-center align-items-center rounded">
-                                        <div class="hero-man bg-white shadow-sm d-flex justify-content-center flex-column rounded ">
-                                            <div class="text-center">
-                                                <i class="bi bi-cloud-arrow-up-fill"></i>
-                                            </div>
-                                            <div class="text-center">
-                                                <span class="text-secondary fs-5 fw-light">Drag and drop your files here</span>
-                                            </div>
-                                            <div class="text-center">
-                                                <h1 class="text-secondary text-uppercase fs-5 fw-bold">or</h1>
-                                            </div>
-                                            <div class="d-flex justify-content-center">
-                                                <button type="button" class="btn btn-transparent btn-lg text-primary border-primary">Browse files</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        </div>
                         </div>
                     </div>
                 </div>

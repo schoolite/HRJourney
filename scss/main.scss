@@ -1,23 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
-@import 'bootstrap/bootstrap.scss';
+@import '../node_modules/bootstrap/scss/bootstrap.scss';
 
-@import "base/typography";     
 
-// @import "component/card";
-// @import "component/img";
-// @import "component/input";
-// @import "component/button";
-// @import "component/profile"; 
-// @import "component/tabs";
-// @import "component/table";
-// @import 'layouts/aside';
-// @import "layouts/login";
-// @import "layouts/edit";
-// @import "layouts/request";
-// @import "layouts/reset";
-// @import "layouts/history";
-// @import "layouts/browse";
-// @import "layouts/logout";
-// @import "layouts/history-popup";
-// @import "layouts/upload";
+@import "./base/variables"; 
+@import "./base/base"; 
 
+@import "./components/nav";
+@import "./components/card";
+@import "./components/table";
+@import "./components/browsefile";
+@import "./components/dropdown";
+
+
+@import "./layout/staffs";
+@import "./layout/dashboard";
+@import "./layout/login";
+@import "./layout/reset";
+@import "./layout/organogram";
+@import "./layout/modals";
