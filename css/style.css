@@ -7846,24 +7846,6 @@ a {
   .card-footer {
     background: none; }
 
-.bar-chart {
-  height: 280px !important; }
-  @media (min-width: 768px) {
-    .bar-chart {
-      height: 280px !important; } }
-
-.donut-chart {
-  height: 500px !important;
-  width: 500px !important; }
-  @media (min-width: 768px) {
-    .donut-chart {
-      height: 200px !important;
-      width: 200px !important; } }
-  @media (min-width: 576px) {
-    .donut-chart {
-      height: 50px !important;
-      width: 50px !important; } }
-
 .table > thead {
   background-color: #00000029;
   color: #081D3A; }
