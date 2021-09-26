@@ -1,0 +1,19 @@
+.bar-chart{
+     height: 280px !important;
+     @include media-breakpoint-up(md){
+          height: 280px !important;
+          
+     }
+}
+.donut-chart{
+     height: 500px !important;
+     width: 500px !important;
+     @include media-breakpoint-up(md){
+          height: 200px !important;
+          width: 200px !important;
+     }
+     @include media-breakpoint-up(sm){
+          height: 50px !important;
+          width: 50px !important;
+     }
+}
