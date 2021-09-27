@@ -7846,6 +7846,12 @@ a {
   .card-footer {
     background: none; }
 
+.bar-chart {
+  height: 150px !important; }
+  @media (min-width: 768px) {
+    .bar-chart {
+      height: 280px !important; } }
+
 .table > thead {
   background-color: #00000029;
   color: #081D3A; }

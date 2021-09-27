@@ -1,0 +1,6 @@
+.bar-chart{
+     height: 150px !important;
+     @include media-breakpoint-up(md){
+          height: 280px !important;        
+     }
+}
