@@ -102,49 +102,49 @@
             <!-- Content -->
             <main role="main" class="content bg-light col-md-10 ms-sm-auto col-lg-10 px-2">
                 <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-7 bg-white">
+                    <div class="row py-3">
+                        <div class="col-12 col-lg-7 bg-white">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="hr-dash-intro p-3 mt-5 rounded">
+                                <div class="col-md-12">
+                                    <div class="hr-dash-intro p-4 my-4 rounded">
                                         <p class="fs-5 fw-light text-primary">Welcome back, <span class="text-primary fw-bold"> jane</span></p>
                                         <p>Your summary for this month</p>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-8">
-                                    <div class="row">
+                                <div class="col-12 col-md-8">
+                                    <div class="row"> 
                                         <div class="col-md-6">
-                                            <div class="hr-dash-card text-uppercase p-3 mt-5 rounded bg-primary">
-                                                <p class="fs-5 fw-lighter">total employees</p>
+                                            <div class="hr-dash-card text-uppercase mt-4 p-2 rounded bg-info">
+                                                <p class="hr-dash-titles fw-bold">total employees <br>(last month)</p>
                                                 <p class="fs-5 fw-bold">75</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="hr-dash-card text-uppercase p-3 mt-5 rounded bg-primary">
-                                                <p class="fs-5 fw-lighter">total employees</p>
+                                            <div class="hr-dash-card text-uppercase p-2 mt-4 rounded bg-success">
+                                                <p class="hr-dash-titles fw-bold">total joinees <br>(last year)</p>
                                                 <p class="fs-5 fw-bold">75</p>
                                             </div>
                                         </div>
                                     </div>
                                     <div class="row">
                                         <div class="col-md-6">
-                                            <div class="hr-dash-card text-uppercase p-3 mt-5 rounded bg-primary">
-                                                <p class="fs-5 fw-lighter">total employees</p>
+                                            <div class="hr-dash-card text-uppercase p-2 mt-4 rounded bg-warning">
+                                                <p class="hr-dash-titles fw-bold">Employees left <br>(last year)</p>
                                                 <p class="fs-5 fw-bold">75</p>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
-                                            <div class="hr-dash-card text-uppercase p-3 mt-5 rounded bg-primary">
-                                                <p class="fs-5 fw-lighter">total employees</p>
+                                            <div class="hr-dash-card text-uppercase p-2 my-4 rounded bg-secondary">
+                                                <p class="hr-dash-titles fw-bold">total applicants <br>(last month)</p>
                                                 <p class="fs-5 fw-bold">75</p>
                                             </div>
-                                        </div>
+                                        </div>          
                                     </div>
                                 </div>
-                                <div class="col-4">
-                                    <div class="hr-dash-cardxl p-3 mt-5 rounded shadow bg-light-300">
+                                <div class="col-12 col-md-4 mb-4">
+                                    <div class="hr-dash-cardxl p-2 h-100 rounded shadow-sm bg-light-300">
                                         <div class="d-flex flex-column justify-content-center">
                                             <p class="fs-5 fw-lighter">You can make edits <br> to this display</p>
                                             <button class="border border-primary  bg-primary rounded text-light text-uppercase text-center mb-4 py-1 ">customize</button>
@@ -153,13 +153,118 @@
                                     </div>
                                 </div>
                             </div>
+                            <!-- bar chart -->
                             <div class="row">
                                 <div class="col-12">
-
+                                    <div class="barChart">
+                                        <canvas id="barChart" height="150"></canvas>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-md-5"></div>
+                        <div class="col-12 col-lg-5 ps-4">
+                            <div class="d-flex flex-row align-items-center">
+                                <div class="d-flex flex-row my-4">
+                                    <p class="me-2 fs-4 fw-bolder">Your shortcut</p>
+                                    <a href="#" class="mt-2 text-decoration-underline">edit</a>
+                                </div>
+                            </div>
+                           <div class="row">
+                               <div class="col-12 col-md-6">
+                                    <div class="hr-dash-shortcut text-uppercase px-2 py-4 rounded bg-light-200 shadow-sm">
+                                        <div class="d-flex justify-content-between">
+                                            <h8 class="fw-lighter">Job applicants</h8>
+                                            <img src="./images/suitcase.svg" alt="suite">
+                                        </div>
+                                    </div>
+                               </div>
+                               <div class="col-md-6">
+                                    <div class="hr-dash-shortcut text-uppercase px-2 py-4 rounded bg-light-200 shadow-sm">
+                                        <div class="d-flex justify-content-between">
+                                            <h8 class="fw-lighter">Job applicants</h8>
+                                            <img src="./images/suitcase.svg" alt="suite">
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                           <div class="row">
+                               <div class="col-md-6">
+                                    <div class="hr-dash-shortcut text-uppercase px-2 py-4 mt-4 rounded bg-light-200 shadow-sm">
+                                        <div class="d-flex justify-content-between">
+                                            <h8 class="fw-lighter">Job applicants</h8>
+                                            <img src="./images/suitcase.svg" alt="suite">
+                                        </div>
+                                    </div>
+                               </div>
+                               <div class="col-md-6">
+                                    <div class="hr-dash-shortcut text-uppercase px-2 py-4 mt-4 rounded bg-light-200 shadow-sm">
+                                        <div class="d-flex justify-content-between">
+                                            <h8 class="fw-lighter">Job applicants</h8>
+                                            <img src="./images/suitcase.svg" alt="suite">
+                                        </div>
+                                    </div>
+                               </div>
+                           </div>
+                           
+                            <div class="row">
+                                <div class="d-flex flex-row mt-5">
+                                    <p class="me-2 fs-4 fw-bolder">Your shortcut</p>
+                                    <a href="#" class="mt-2 text-decoration-underline">edit</a>
+                                </div>
+                                <div class="bg-white shadow-sm p-3 rounded d-flex flex-column  flex-lg-row gap-4 gap-lg-0 align-items-lg-center">
+                                    <!-- donut chart -->
+                                    <!-- <div class="col-8 col-lg-6">
+                                        <canvas id="donutChart"  width='325' height='325' class="donutChart"></canvas>
+                                    </div>
+                                    <div class="col-12 col-lg-6 d-flex flex-column gap-3">
+                                        <h8 class="fw-bold fs-5 text-secondary me-4">Employee Gender Distribution</h8>
+                                        <div class="donutChart-details">
+                                            <div class="text-secondary fs-5 mb-2">
+                                                <span class="option-1"></span> &nbsp; Male &#45; 40                                          
+                                            </div>                                      
+                                            <div class="text-secondary fs-5">
+                                                <span class="option-2"></span> &nbsp; Female &#45; 35 
+                                            </div>                                      
+                                        </div>
+                                    </div> -->
+
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <canvas id="donutChart" class="donutChart" height=300></canvas>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <h8 class="fw-bold fs-5 text-secondary">Employee Gender Distribution</h8>
+                                            <div class="donutChart-details">
+                                                <div class="text-secondary fs-5 mb-2">
+                                                    <span class="option-1"></span> &nbsp; Male &#45; 40                                          
+                                                </div>                                      
+                                                <div class="text-secondary fs-5">
+                                                    <span class="option-2"></span> &nbsp; Female &#45; 35 
+                                                </div>                                      
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="hr-dash-cards p-4 mt-4 rounded border col-12">
+                                    <p class="fw-bolder text-secondary fs-5 text-uppercase">Upcoming holiday</p>
+                                    <div class="d-flex flex-column-reverse flex-lg-row justify-content-between">
+                                        <div class="">
+                                            <p class="fs-5 fw-bold">2</p>
+                                            <span class="fs-5 fw-lighter">months</span> 
+                                        </div>
+                                        <div class="">
+                                            <p class="fs-5 fw-bold">1st Oct</p>
+                                            <p class="fs-5 fw-lighter">Independence day</p> 
+                                        </div>
+                                        <div>
+                                            <img src="./images/flowers.svg" alt="flow">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </main>
@@ -167,11 +272,190 @@
     </div>
 
 
+    <!-- External Script -->
+    <script src="js/script.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
         crossorigin="anonymous"></script>
 
-    <!-- External Script -->
-    <script src="js/script.js"></script>
+    <!-- chartjs -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.5.1/chart.min.js" integrity="sha512-Wt1bJGtlnMtGP0dqNFH1xlkLBNpEodaiQ8ZN5JLA5wpc1sUlk/O5uuOMNgvzddzkpvZ9GLyYNa8w2s7rqiTk5Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <!--bar charts -->
+    <script>
+        var ctx = document.getElementById('barChart').getContext('2d');
+        var barChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['FEB', 'MAR', 'APR', 'MAY', 'JUN', 'JUL'],
+                datasets: [{
+                    label: 'Present',
+                    data: [40, 30, 35, 25, 30, 25],
+                    backgroundColor: [
+                        '#B3CCF2',
+                    ],
+                    borderRadius:70,
+                    barThickness: 6,
+                    categoryPercentage: 1.0,
+                    barPercentage: 1.0
+                },
+                {
+                    label: 'Absent',
+                    data: [12, 23, 10, 15, 20, 18],
+                    backgroundColor: [
+                        '#E0BCF8',
+                    ],
+                    borderRadius:70,
+                    barThickness: 6,
+                },
+                {
+                    label: 'On leave',
+                    data: [6, 19, 20, 25, 10, 11],
+                    backgroundColor: [
+                        '#F7DDB5',
+                    ],
+                    borderRadius:70,
+                    barThickness: 6,
+
+                }]
+            },
+            options: {
+                maintainAspectRatio: false,
+                responsive: true, 
+
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    },
+                    xAxes: [{
+                        maxBarThickness: 40,
+                        barPercentage: 0.7,
+                        categoryPercentage: 1.0,
+                    }]
+                },
+                plugins: {
+                    title: {
+                        display: true,
+                        text: 'ATTENDANCE',
+                        align: 'start',
+                        color: '#707070',
+                        font: {
+                            size: 16,
+                            family: 'Lato',
+                            weight: 'bold',
+                        },
+                        
+                        padding:{
+                            bottom: 0,
+                            top: 15,
+                        },
+                    },
+                    subtitle: {
+                        display: true,
+                        text: 'Last 6 month',
+                        color: '#707070',
+                        align: 'start',
+                        font: {
+                            size: 14,
+                            family: 'tahoma',
+                            weight: 'normal',
+                        },
+
+                    },
+                    legend: {
+                        align: 'end',
+                    },
+                }
+            }
+
+        });
+    </script>
+    <!--doughnut charts -->
+    <script>
+        // var ctx = document.getElementById('donutChart').getContext('2d');
+        // var donutChart = new Chart(ctx, 
+        //     {
+        //         type: 'doughnut',
+        //         data: {
+        //             datasets: [{
+        //             data: [40,35],
+        //             backgroundColor: [
+        //             '#B3CCF2',
+        //             '#F0F5FD'
+        //         ],
+        //             }],
+        //         },
+        //         options: {
+        //             percentageInnerCutout: 70,
+
+        //             plugins: {
+        //                 doughnutlabel: {
+        //                     labels: [{
+        //                     text: '100',
+        //                     font: {
+        //                         size: 20,
+        //                         weight: 'bold'
+        //                     }
+        //                     }, {
+        //                     text: 'total'
+        //                     }]
+        //                 }
+        //                 }
+        //             },
+        //         }
+        // );
+
+        
+
+        let f = new FontFace('Lato', 'url(font/Lato-Regular.ttf)');
+
+        f.load().then(function() {
+            var canvas=document.getElementById("donutChart");
+            var ctx=canvas.getContext("2d");
+
+            var colors=['#B3CCF2','#F0F5FD'];
+            var values=[40,35];
+            var labels=['Total'];
+            var total = (values.reduce((a, b) => a + b, 0)).toString();
+            var cx = 106;
+            var cy = 150;
+            var radius = 90;
+            var arcwidth = 20;
+            var selectedValue = 0;
+   
+            var tot=0;
+            var accum=0;
+            var PI=Math.PI;
+            var PI2=PI*2;
+            var offset=-PI/2;
+            ctx.lineWidth=arcwidth;
+            for(var i=0;i<values.length;i++){tot+=values[i];}
+            for(var i=0;i<values.length;i++){
+                ctx.beginPath();
+                ctx.arc(cx,cy,radius,
+                    offset+PI2*(accum/tot),
+                    offset+PI2*((accum+values[i])/tot)
+            );
+            ctx.strokeStyle=colors[i];
+            ctx.stroke();
+            accum+=values[i];
+            }
+            var innerRadius=radius-arcwidth-3;
+            ctx.beginPath();
+            ctx.arc(cx,cy,innerRadius,0,PI2);
+            ctx.fillStyle=colors[selectedValue];
+            ctx.fill();
+            ctx.textAlign='center';
+            ctx.textBaseline='bottom';
+            ctx.fillStyle='white';
+            ctx.font=(innerRadius - 17)+'px Lato';
+            ctx.fillText(total,cx,cy + (innerRadius - 17)*.9);
+            ctx.font=(innerRadius/4)+'px Lato';
+            ctx.fillText(labels[selectedValue],cx,cy-innerRadius*.25);
+        });
+
+
+    </script>
+
 </body>
